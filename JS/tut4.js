@@ -33,8 +33,11 @@ let stuMarks = {
 };
 console.log("Data type is " + typeof stuMarks);
 
+//function
 function findName() {}
 console.log("Data type is " + typeof findName);
 
+//date of the call
 let date = new Date();
+console.log(date);
 console.log("Data type is " + typeof date);
