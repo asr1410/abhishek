@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-1.01.2.js"></script>
+    <script>
+      $(document).ready(function () {
+        var $checkboxes = $('#a td input[type="checkbox"]');
+        $checkboxes.change(function () {
+          var ccc = $checkboxes.filter(":checked").length;
+          $("span").text(ccc);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form id="a">
+      <table>
+        <tr>
+          <td><input type="checkbox" name="color" value="Red" />Red</td>
+          <td><input type="checkbox" name="color" value="Green" />Green</td>
+          <td><input type="checkbox" name="color" value="Blue" />Blue</td>
+          <td><input type="checkbox" name="color" value="Black" />Black</td>
+        </tr>
+      </table>
+    </form>
+  </body>
+  <div id="result"><span>0</span> are checked</div>
+</html>
