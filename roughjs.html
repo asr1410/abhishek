@@ -1,13 +1,19 @@
 <html>
-  <head>
+  <body>
+    <p id="id1"></p>
+    <!-- line 1-->
+    <p id="id2"></p>
+    <!-- line 2-->
     <script>
-      function aFun() {
-        var num1 = 111;
-        var num2 = "111";
-        alert(num1 == num2); //Line1
-        alert(num1 === num2); //Line2
+      var y = 10;
+      myFunction();
+      console.log(window.y);
+      document.getElementById("id1").innerHTML = y;
+      document.getElementById("id2").innerHTML = window.y;
+      function myFunction() {
+        y = 20;
+        y = y + window.y;
       }
     </script>
-  </head>
-  <button onclick="aFun()">Click</button>
+  </body>
 </html>
